@@ -14,9 +14,20 @@
         <main>
         <form>
             <div class="bloco">
-                <label id="name-label"> <p> Name </p> <input id="name" class="em-bloco" type="text" placeholder="Enter your name" required/></label> 
-                <label id="email-label"> <p> Email</p> <input id="email" class="em-bloco" type="email" placeholder="Enter your Email" required/></label> 
-                <label id="number-label"> <p> Age <span>(optional)</span> </p> <input id="number" class="em-bloco" type="number" min="15" max="120" placeholder="Age"></label>
+                <p>
+                    <label for="iname">Name
+                    <input type="text" name="name" id="iname" class="em-bloco"  placeholder="Enter your name" required/></label>
+                </p>
+
+                <p>
+                    <label for="iemail"> Email
+                    <input type="email" name="email" id="iemail" class="em-bloco"  placeholder="Enter your email" required/></label>
+                </p>
+
+                <p>
+                    <label for="inumber"> Age <span>(optional)</span>
+                    <input type="number" name="inumber" id="inumber" class="em-bloco"  min="15" max="120" placeholder="Age"></label>
+                </p>
             </div>
 
             <div class="bloco"> 
@@ -33,12 +44,13 @@
 
             <div class="bloco"> 
                 <p> Would you recommend freeCodeCamp to a friend? </p>
-                <label><input type="radio" name="definetely_maybe_not-sure" value="definetely"/> Definetely</label>
-                <label><input type="radio" name="definetely_maybe_not-sure" value="maybe"> Maybe</label>
-                <label><input type="radio" name="definetely_maybe_not-sure" value="not-sure"> Not sure</label>
+                <input type="radio" name="option" value="definetely"/> Definetely <br>
+                <input type="radio" name="option" value="maybe"> Maybe <br>
+                <input type="radio" name="option" value="not-sure"> Not sure
             </div>
 
-            <div class="bloco"> <p>What is your favorite feature of freeCodeCamp?</p>
+            <div class="bloco"> 
+                <p>What is your favorite feature of freeCodeCamp?</p>
                 <select name="dropdown-two" id="dropdown-two" class="em-bloco">
                     <option value="">Select current role</option>
                     <option value="1">Chalenges</option>
@@ -49,20 +61,21 @@
                 </select>
             </div>
 
-            <div class="bloco"> <p>What would you like to see improved? <span>(Check all that apply)</span> </p>
-                <label><input type="checkbox" value="front-end"> Front-end Projects</label>
-                <label><input type="checkbox" value="back-end"> Back-end Projects</label>
-                <label><input type="checkbox" value="additional-courses"> Additional Courses</label>
-                <label><input type="checkbox" value="challenges"> Challenges</label>
-                <label><input type="checkbox" value="forum"> Forum</label>
+            <div class="bloco"> 
+                <p>What would you like to see improved? <span>(Check all that apply)</span> </p>
+                <input type="checkbox" value="front-end"> Front-end Projects <br>
+                <input type="checkbox" value="back-end"> Back-end Projects <br>
+                <input type="checkbox" value="additional-courses"> Additional Courses <br>
+                <input type="checkbox" value="challenges"> Challenges <br>
+                <input type="checkbox" value="forum"> Forum
             </div>
 
             <div class="bloco">
-                <label for="textarea"> <p>Any comments or suggestions?</p> </label>
-                <textarea name="comentario" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+                <label for="icomentario">Any comments or suggestions?</label>
+                <textarea name="comentario" id="icomentario" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
             </div>
 
-            <button type="submit" class="bloco"> Submit </button>
+            <button type="submit" class="bloco">Submit</button>
         </form>
     </main>
 </body>

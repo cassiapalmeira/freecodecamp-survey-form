@@ -10,7 +10,6 @@ body {
 
 main {
     background-color: #2f4f4f;
-    min-width: 300px;
     max-width: 600px;
     margin: auto;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.562);
@@ -71,16 +70,6 @@ span {
 form {
     padding-right: 20px;
     padding-left: 20px;
-} 
-
-#name-label, #email-label, #number-label { /* id's do nome, email e idade */ 
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-} 
-
-#name, #email, #number {  /* id's do input do nome, do email e da idade */
-    padding-top: 0;
-    margin-top: 0;
 }
 
 #dropdown, #dropdown-two { /* id's do primeiro e do segundo select */
@@ -109,4 +98,10 @@ form > button {
     font-size: 22px;
     text-align: center;
     color: #fff;
+}
+
+@media screen and (max-width: 300px) {
+    main {
+        width: 100%;
+    }
 }
